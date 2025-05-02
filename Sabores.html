@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sabores-Freddo</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/sabores.css">
+</head>
+<body>
+
+  <!-- Barra de navegacion -->
+  <nav class="navbar navbar-expand-lg container-fluid fixed-top px-0">
+    <a class="navbar-brand" href="index.html">
+      <img src="images/foot-head/LogoFreddo.jpg" alt="Logo Freddo" height="82">
+    </a>
+    <button class="navbar-toggler custom-toggler collapsed" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarNavAlt" aria-controls="navbarNavAlt" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAlt">
+      <ul class="d-none d-lg-flex">
+        <li>
+          <a href="#">PRODUCTOS <i class="fa-solid fa-chevron-down" style="margin-left: 4px; font-size: 12px;"></i></a>
+          <div class="dropdown1">
+            <a href="Sabores.html">Sabores <img src="images/Header-Footer/sabores.jpg" alt=""></a>
+            <a href="Tentaciones.html">Tentaciones <img src="images/Header-Footer/tentaciones.jpg" alt=""></a>
+            <a href="Pre-envasado.html">Pre envasados <img src="images/Header-Footer/preenvasados.jpg" alt=""></a>
+          </div>
+        </li>
+        <li>
+          <a href="#">DÓNDE ESTAMOS <i class="fa-solid fa-chevron-down"
+              style="margin-left: 4px; font-size: 12px;"></i></a>
+          <div class="dropdown">
+            <a href="Locales.html">LOCALES</a>
+            <a href="Locales.html">PUNTOS DE VENTA</a>
+          </div>
+        </li>
+        <li>
+          <a href="#">NOSOTROS <i class="fa-solid fa-chevron-down" style="margin-left: 4px; font-size: 12px;"></i></a>
+          <div class="dropdown">
+            <a href="Notros.html">QUIENES SOMOS</a>
+            <a href="Novedades.html">NOVEDADES</a>
+            <a href="Franquicia.html">ABRI TU FRANQUICIA</a>
+            <a href="Contacto.html">CONTACTO</a>
+          </div>
+        </li>
+      </ul>
+
+      <!--Acordeón -->
+      <div class="accordion d-lg-none w-100" id="menuAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#productos">
+              PRODUCTOS
+            </button>
+          </h2>
+          <div id="productos" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
+            <div class="accordion-body">
+              <a href="Sabores.html">SABORES</a>
+              <a href="Tentaciones.html">TENTACIONES</a>
+              <a href="Pre-envasado.html">PRE ENVASADOS</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#ubicaciones">
+              DÓNDE ESTAMOS
+            </button>
+          </h2>
+          <div id="ubicaciones" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
+            <div class="accordion-body">
+              <a href="Locales.html">LOCALES</a>
+              <a href="Locales.html">PUNTOS DE VENTA</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#nosotros">
+              NOSOTROS
+            </button>
+          </h2>
+          <div id="nosotros" class="accordion-collapse collapse" data-bs-parent="#menuAccordion">
+            <div class="accordion-body">
+              <a href="Notros.html">QUIENES SOMOS</a>
+              <a href="Novedades.html">NOVEDADES</a>
+              <a href="Franquicia.html">ABRI TU FRANQUICIA</a>
+              <a href="Contacto.html">CONTACTO</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </nav>
+  <div class="cabecera">
+    <div class="overlay"></div>
+    <div class="contenido">
+      <h1>SABORES</h1>
+    </div>
+  </div>
+  <!-- Subnav se pone fijo cuando baja el scroll -->
+  <div class="subnav-wrapper ">
+    <div class="subnav-inner">
+      <a href="#cremas">
+        <div class="flavor-item">
+          <img src="images/Imagenes/menucrema.jpg" class="img-fluid rounded-circle" alt="Cremas" width="80">
+          <p class="mb-0">Cremas</p>
+        </div>
+      </a>
+      <a href="#chocolates">
+        <div class="flavor-item">
+          <img src="images/Imagenes/Chocolates.jpg" class="img-fluid rounded-circle" alt="Chocolates" width="80">
+          <p class="mb-0">Chocolates</p>
+        </div>
+      </a>
+      <a href="#frutales">
+        <div class="flavor-item">
+          <img src="images/Imagenes/menu-frutales.jpg" class="img-fluid rounded-circle" alt="Frutales" width="80">
+          <p class="mb-0">Frutales</p>
+        </div>
+      </a>
+      <a href="#dulceDeLeche">
+        <div class="flavor-item">
+          <img src="images/Imagenes/DulceDeLeche.jpg" class="img-fluid rounded-circle" alt="Dulce de Leche" width="80">
+          <p class="mb-0">Dulce de Leche</p>
+        </div>
+      </a>
+      <a href="#boutique">
+        <div class="flavor-item">
+          <img src="images/Imagenes/LineaBoutique.jpg" class="img-fluid rounded-circle" alt="Boutique" width="80">
+          <p>Boutique</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="container align-items-center">
+    <!-- SECCIÓN CREMAS -->
+    <div class="container my-5" id="cremas">
+      <h1 class="titulos text-start">CREMAS</h1>
+      <div class="row text-center cards">
+        <!-- AMARENA -->
+        <div class="col-md-3  card fade-up">
+          <div class="image-box">
+            <img src="images/Sabores/Amerana.jpg" alt="Amarena" class="img-fluid zoom-img">
+          </div>
+          <h5 class="mt-3 fw-bold">AMARENA</h5>
+          <p>Helado de vainilla con cerezas italianas y pedacitos de chocolate</p>
+        </div>
+        <!-- AMERICANA -->
+        <div class="col-md-3 card fade-up">
+          <div class="image-box">
+            <img src="images/Sabores/Americana.jpg" alt="Americana" class="img-fluid zoom-img">
+          </div>
+          <h5 class="mt-3 fw-bold">AMERICANA</h5>
+          <p>Nuestra Receta original con crema batida</p>
+        </div>
+        <!-- BANANA SPLIT -->
+        <div class="col-md-3 card fade-up">
+          <div class="image-box">
+            <img src="images/Sabores/BananaSplit.jpg" alt="Banana Split" class="img-fluid zoom-img">
+          </div>
+          <h5 class="mt-3 fw-bold">BANANA SPLIT</h5>
+          <p>Con dulce de leche tradicional y trocitos de chocolate semi amargo</p>
+        </div>
+        <!-- CAFÉ AL CIOCCOLATO -->
+        <div class="col-md-3 card fade-up">
+          <div class="image-box">
+            <img src="images/Sabores/CafeAlCioccolato.jpg" alt="Café al Cioccolato" class="img-fluid zoom-img">
+          </div>
+          <h5 class="mt-3 fw-bold">CAFÉ AL CIOCCOLATO</h5>
+          <p>Helado de café con pedacitos de chocolate</p>
+        </div>
+        <!-- COCO CON DULCE DE LECHE -->
+        <div class="col-md-3 card fade-up">
+          <div class="image-box">
+            <img src="images/Sabores/CocoConDulceDeLeche.jpg" alt="Coco con dulce de leche" class="img-fluid zoom-img">
+          </div>
+          <h5 class="mt-3 fw-bold">COCO CON DULCE DE LECHE</h5>
+          <p>Con coc de las Filipinas y dulce de leche tradicional</p>
+        </div>
+        <!-- CHOCOTORTA -->
+        <div class="col-md-3 card fade-up">
+          <div class="image-box">
+            <img src="images/Sabores/Chocotorta.jpg" alt="Chocotorta" class="img-fluid zoom-img">
+          </div>
+          <h5 class="mt-3 fw-bold">CHOCOTORTA</h5>
+          <p>Con galletas Chocolinas y dulce de leche natural</p>
+        </div>
+        <!-- FREDDO ORE -->
+        <div class="col-md-3 card fade-up">
+          <div class="image-box">
+            <img src="images/Sabores/FreddoOreo.jpg" alt="Freddo Oreo" class="img-fluid zoom-img">
+          </div>
+          <h5 class="mt-3 fw-bold">FREDDO OREO
+            COOKIES & CREAM</h5>
+          <p>Crema americana con dulce de leche y Mini Oreo</p>
+        </div>
+        <!-- CROSTATA AL LIMONE -->
+        <div class="col-md-3 card fade-up">
+          <div class="image-box">
+            <img src="images/Sabores/CrostataAlLimone.jpg" alt="CROSTATA AL LIMONE" class="img-fluid zoom-img">
+          </div>
+          <h5 class="mt-3 fw-bold">CROSTATA AL LIMONE</h5>
+          <p>Suave crema de limón con Biscotti</p>
+        </div>
+        <!-- GRANIZADO -->
+        <div class="col-md-3 card fade-up">
+          <div class="image-box">
+            <img src="images/Sabores/Granizado.jpg" alt="GRANIZADO" class="img-fluid zoom-img">
+          </div>
+          <h5 class="mt-3 fw-bold">GRANIZADO</h5>
+          <p>Crema americana con trocitos de chocolate semi amargo</p>
+        </div>
+        <!-- MASCARPONE -->
+        <div class="col-md-3 card fade-up">
+          <div class="image-box">
+            <img src="images/Sabores/Mascarpone.jpg" alt="MASCARPONE" class="img-fluid zoom-img">
+          </div>
+          <h5 class="mt-3 fw-bold">MASCARPONE</h5>
+          <p>Con frambuesas de la Patagonia</p>
+        </div>
+        <!-- MENTA GRANIZADA -->
+        <div class="col-md-3 card fade-up">
+          <div class="image-box">
+            <img src="images/Sabores/MentaGranizada.jpg" alt="Menta granizada" class="img-fluid zoom-img">
+          </div>
+          <h5 class="mt-3 fw-bold">MENTA GRANIZADA</h5>
+          <p>Con trocitos de chocolate semi amargo</p>
+        </div>
+        <!-- NOCCIOLA -->
+        <div class="col-md-3 card fade-up">
+          <div class="image-box">
+            <img src="images/Sabores/Nocciola.jpg" alt="NOCCIOLA" class="img-fluid zoom-img">
+          </div>
+          <h5 class="mt-3 fw-bold">NOCCIOLA</h5>
+          <p>Avellanas del Piemonte y crocante de chocolate</p>
+        </div>
+        <!-- SAMBAYÓN -->
+        <div class="col-md-3 card fade-up">
+          <div class="image-box">
+            <img src="images/Sabores/Sambayon.jpg" alt="SAMBAYÓN" class="img-fluid zoom-img">
+          </div>
+          <h5 class="mt-3 fw-bold">SAMBAYÓN</h5>
+          <p>Receta original con vino Marsala</p>
+        </div>
+        <!-- TIRAMISÚ -->
+        <div class="col-md-3 card fade-up">
+          <div class="image-box">
+            <img src="images/Sabores/Tiramisu.jpg" alt="TIRAMISÚ" class="img-fluid zoom-img">
+          </div>
+          <h5 class="mt-3 fw-bold">TIRAMISÚ</h5>
+          <p>Mascarpone, licor de café y cacao</p>
+        </div>
+        <!-- TRAMONTANA -->
+        <div class="col-md-3 card fade-up">
+          <div class="image-box">
+            <img src="images/Sabores/Tramontana.jpg" alt="TRAMONTANA" class="img-fluid zoom-img">
+          </div>
+          <h5 class="mt-3 fw-bold">TRAMONTANA</h5>
+          <p>Con galletas crocantes de chocolate y dulce de leche tradicional</p>
+        </div>
+        <!-- PISTACCHIO -->
+        <div class="col-md-3 card fade-up">
+          <div class="image-box">
+            <img src="images/Sabores/Pistacchio.jpg" alt="PISTACCHIO" class="img-fluid zoom-img">
+          </div>
+          <h5 class="mt-3 fw-bold">PISTACCHIO</h5>
+          <p>Con pistacchios originarios de Sicilia</p>
+        </div>
+        <!-- VAINILLA -->
+        <div class="col-md-3 card fade-up">
+          <div class="image-box ">
+            <img src="images/Sabores/Vainilla.jpg" alt="VAINILLA" class="img-fluid zoom-img">
+          </div>
+          <h5 class="mt-3 fw-bold">VAINILLA</h5>
+          <p>Nuestra receta original de tradicion italiana</p>
+        </div>
+      </div>
+    </div>
+    <!-- SECCIÓN CHOCOLATES -->
+    <div class="container my-5" id="chocolates">
+      <h1 class="titulos text-start">CHOCOLATES</h1>
+      <div class="row text-center cards">
+        <!-- BLANCO PATAGÓNICO -->
+        <div class="col-md-3 card fade-up">
+          <div class="image-box">
+            <img src="images/Sabores/Blanco-patagonico.jpg" alt="BLANCO PATAGÓNICO" class="img-fluid zoom-img">
+          </div>
+          <h5 class="mt-3 fw-bold">BLANCO PATAGÓNICO</h5>
+          <p>Con granizado de chocolate y frutos rojos</p>
+        </div>
+        <!-- CLÁSICO -->
+        <div class="col-md-3 card fade-up">
+          <div class="image-box">
+            <img src="images/Sabores/Choco-clasico.jpg" alt="CLÁSICO" class="img-fluid zoom-img">
+          </div>
+          <h5 class="mt-3 fw-bold">CLÁSICO</h5>
+          <p>Con chocolate semiamargo de Colombia</p>
+        </div>
+        <!-- CON ALMENDRAS -->
+        <div class="col-md-3 card fade-up">
+          <div class="image-box">
+            <img src="images/Sabores/Chocolate-c-almendras.jpg" alt="CON ALMENDRAS" class="img-fluid zoom-img">
+          </div>
+          <h5 class="mt-3 fw-bold">CON ALMENDRAS</h5>
+          <p>Con almendras tostadas de California</p>
+        </div>
+        <!-- DOBLE TENTACIÓN -->
+        <div class="col-md-3 card fade-up">
+          <div class="image-box">
+            <img src="images/Sabores/Choco-tentacion.jpg" alt="DOBLE TENTACIÓN" class="img-fluid zoom-img">
+          </div>
+          <h5 class="mt-3 fw-bold">DOBLE TENTACIÓN</h5>
+          <p>Con chocolate granizado y dulce de leche tradicional</p>
+        </div>
+        <!-- CHOCOLATE FREDDO -->
+        <div class="col-md-3 card fade-up">
+          <div class="image-box">
+            <img src="images/Sabores/ChocolateFreddo.jpg" alt="CHOCOLATE FREDDO" class="img-fluid zoom-img">
+          </div>
+          <h5 class="mt-3 fw-bold">CHOCOLATE FREDDO</h5>
+          <p>Con avellanas tostadas de Cataluña y crema de avellanas</p>
+        </div>
+        <!-- INTENSO EXTRA CACAO -->
+        <div class="col-md-3 card fade-up">
+          <div class="image-box">
+            <img src="images/Sabores/Choco-intenso.jpg" alt="INTENSO EXTRA CACAO" class="img-fluid zoom-img">
+          </div>
+          <h5 class="mt-3 fw-bold">INTENSO EXTRA CACAO</h5>
+          <p>Con cacao 90% originario de Ecuador</p>
+        </div>
+        <!-- 3 CHOCOLATES -->
+        <div class="col-md-3 card fade-up">
+          <div class="image-box">
+            <img src="images/Sabores/3Chocolates.jpg" alt="3 CHOCOLATES" class="img-fluid zoom-img">
+          </div>
+          <h5 class="mt-3 fw-bold">3 CHOCOLATES</h5>
+          <p>Chocolate amargo con salsa de chocolate y pedacitos de brownie</p>
+        </div>
+      </div>
+    </div>
+    <!-- SECCION FRUTALES -->
+    <div class="container my-5" id="frutales">
+      <h1 class="titulos text-start">FRUTALES</h1>
+      <div class="row text-center cards">
+        <!-- AÇAÍ -->
+        <div class="col-md-3 card fade-up">
+          <div class="image-box">
+            <img src="images/Sabores/Acai.jpg" alt="AÇAÍ" class="img-fluid zoom-img">
+          </div>
+          <h5 class="mt-3 fw-bold">AÇAÍ</h5>
+          <p>Con açaí de Brasil</p>
+        </div>
+        <!-- BANANA MANGO -->
+        <div class="col-md-3 card fade-up">
+          <div class="image-box">
+            <img src="images/Sabores/BananaMango.jpg" alt="BANANA MANGO" class="img-fluid zoom-img">
+          </div>
+          <h5 class="mt-3 fw-bold">BANANA MANGO</h5>
+          <p>Nuestro sabor único fresco y original</p>
+        </div>
+        <!-- FRAMBUESA PATAGÓNICA -->
+        <div class="col-md-3 card fade-up">
+          <div class="image-box">
+            <img src="images/Sabores/FrambuesaPatagonica.jpg" alt="FRAMBUESA PATAGÓNICA" class="img-fluid zoom-img">
+          </div>
+          <h5 class="mt-3 fw-bold">FRAMBUESA PATAGÓNICA</h5>
+          <p>Con frambuesas seleccionadas de la patagonia</p>
+        </div>
+        <!-- FRUTILLA A LA CREMA -->
+        <div class="col-md-3 card fade-up">
+          <div class="image-box">
+            <img src="images/Sabores/FrutillaALaCrema.jpg" alt="FRUTILLA A LA CREMA" class="img-fluid zoom-img">
+          </div>
+          <h5 class="mt-3 fw-bold">FRUTILLA A LA CREMA</h5>
+          <p>Con frutillas naturales y crema batida</p>
+        </div>
+        <!-- FRUTILLA AL NATURAL -->
+        <div class="col-md-3 card fade-up">
+          <div class="image-box">
+            <img src="images/Sabores/FrutillaAlNatural.jpg" alt="FRUTILLA AL NATURAL" class="img-fluid zoom-img">
+          </div>
+          <h5 class="mt-3 fw-bold">FRUTILLA AL NATURAL</h5>
+          <p>Con Frutillas premium seleccionadas</p>
+        </div>
+        <!-- FRUTOS DEL BOSQUE -->
+        <div class="col-md-3 card fade-up">
+          <div class="image-box">
+            <img src="images/Sabores/FrutosDelBosque.jpg" alt="FRUTOS DEL BOSQUE" class="img-fluid zoom-img">
+          </div>
+          <h5 class="mt-3 fw-bold">FRUTOS DEL BOSQUE</h5>
+          <p>Americana, frambuesas, grosellas, arándanos, frutillas, y moras de la Patagonia</p>
+        </div>
+        <!-- LIMÓN -->
+        <div class="col-md-3 card fade-up">
+          <div class="image-box">
+            <img src="images/Sabores/Limon.jpg" alt="LIMÓN" class="img-fluid zoom-img">
+          </div>
+          <h5 class="mt-3 fw-bold">LIMÓN</h5>
+          <p>Nuestro sabor único fresco y original</p>
+        </div>
+        <!-- MARACUYÁ CON NARANJA -->
+        <div class="col-md-3 card fade-up">
+          <div class="image-box">
+            <img src="images/Sabores/MaracuyaConNaranja.jpg" alt="MARACUYÁ CON NARANJA" class="img-fluid zoom-img">
+          </div>
+          <h5 class="mt-3 fw-bold">MARACUYÁ CON NARANJA</h5>
+          <p>Con jugo de naranja natural y maracuyá de Brasil</p>
+        </div>
+        <!-- MOUSSE DE MARACUYÁ -->
+        <div class="col-md-3 card fade-up">
+          <div class="image-box">
+            <img src="images/Sabores/MousseDeMaracuya.jpg" alt="MOUSSE DE MARACUYÁ" class="img-fluid zoom-img">
+          </div>
+          <h5 class="mt-3 fw-bold">MOUSSE DE MARACUYÁ</h5>
+          <p>Con Maracuyá de Brasil</p>
+        </div>
+        <!-- PATAGONIA CÍTRICA -->
+        <div class="col-md-3 card fade-up">
+          <div class="image-box">
+            <img src="images/Sabores/PatagoniaCitrica.jpg" alt="PATAGONIA CÍTRICA" class="img-fluid zoom-img">
+          </div>
+          <h5 class="mt-3 fw-bold">PATAGONIA CÍTRICA</h5>
+          <p>Helado de pera y limón con arándanos naturales</p>
+        </div>
+        <!-- POMELO ROSADO -->
+        <div class="col-md-3 card fade-up">
+          <div class="image-box">
+            <img src="images/Sabores/PomeloRosado.jpg" alt="POMELO ROSADO" class="img-fluid zoom-img">
+          </div>
+          <h5 class="mt-3 fw-bold">POMELO ROSADO</h5>
+          <p>Helado de pomelo rosado con frutos del bosque</p>
+        </div>
+      </div>
+    </div>
+    <!-- SECCIÓN DULCE DE LECHES -->
+    <div class="container my-5" id="dulceDeLeche">
+      <h1 class="titulos text-start">DULCE DE LECHES</h1>
+      <div class="row text-center cards">
+        <!-- CLÁSICO -->
+        <div class="col-md-3 card fade-up">
+          <div class="image-box">
+            <img src="images/Sabores/Clasico.jpg" alt="CLÁSICO" class="img-fluid zoom-img">
+          </div>
+          <h5 class="mt-3 fw-bold">CLÁSICO</h5>
+          <p>Nuestra receta original desde 1969</p>
+        </div>
+        <!-- DULCE DE LECHE CON NUEZ -->
+        <div class="col-md-3 card fade-up">
+          <div class="image-box">
+            <img src="images/Sabores/DulceDeLecheConNuez.jpg" alt="DULCE DE LECHE CON NUEZ" class="img-fluid zoom-img">
+          </div>
+          <h5 class="mt-3 fw-bold">DULCE DE LECHE CON NUEZ</h5>
+          <p>Helado de dulce de leche y nuez</p>
+        </div>
+        <!-- TENTACIÓN -->
+        <div class="col-md-3 card fade-up">
+          <div class="image-box">
+            <img src="images/Sabores/Tentacion.jpg" alt="TENTACIÓN" class="img-fluid zoom-img">
+          </div>
+          <h5 class="mt-3 fw-bold">TENTACIÓN</h5>
+          <p>Con dulce de leche tradicional</p>
+        </div>
+        <!-- DULCE DE LECHE DOBLE TENTACIÓN -->
+        <div class="col-md-3 card fade-up">
+          <div class="image-box">
+            <img src="images/Sabores/DulceDeLecheDobleTentacion.jpg" alt="DULCE DE LECHE DOBLE TENTACIÓN"
+              class="img-fluid zoom-img">
+          </div>
+          <h5 class="mt-3 fw-bold">DULCE DE LECHE DOBLE TENTACIÓN</h5>
+          <p>Con dulce de leche tradicional y pedacitos de chocolate</p>
+        </div>
+        <!-- DULCE DE LECHE GRANIZADO -->
+        <div class="col-md-3 card fade-up">
+          <div class="image-box">
+            <img src="images/Sabores/DulceDeLecheGranizado.jpg" alt="DULCE DE LECHE GRANIZADO"
+              class="img-fluid zoom-img">
+          </div>
+          <h5 class="mt-3 fw-bold">DULCE DE LECHE GRANIZADO</h5>
+          <p>Con trozos de chocolate semi amargo</p>
+        </div>
+        <!-- MINI OREO -->
+        <div class="col-md-3 card fade-up">
+          <div class="image-box">
+            <img src="images/Sabores/MiniOreo.jpg" alt="MINI OREO" class="img-fluid zoom-img">
+          </div>
+          <h5 class="mt-3 fw-bold">MINI OREO</h5>
+          <p>Con galletitas Mini Oreo</p>
+        </div>
+      </div>
+    </div>
+    <!-- SECCIÓN LÍNEA BOUTIQUE -->
+    <div class="container my-5" id="boutique">
+      <h1 class="titulos text-start">LÍNEA BOUTIQUE</h1>
+      <div class="row text-center cards">
+        <!-- FIORDILATTE AL PISTACCHIO -->
+        <div class="col-md-3 card fade-up">
+          <div class="image-box">
+            <img src="images/Sabores/FiordilatteAlPistacchio.jpg" alt="FIORDILATTE AL PISTACCHIO"
+              class="img-fluid zoom-img">
+          </div>
+          <h5 class="mt-3 fw-bold">FIORDILATTE AL PISTACCHIO</h5>
+          <p>Helado de crema americana con cobertura de crema de pistacchio​</p>
+        </div>
+        <!-- DULCE DE LECHE GRANIZADO -->
+        <div class="col-md-3 card fade-up">
+          <div class="image-box">
+            <img src="images/Sabores/LBDulcesDeLecheGranizado.jpg" alt="DULCE DE LECHE GRANIZADO"
+              class="img-fluid zoom-img">
+          </div>
+          <h5 class="mt-3 fw-bold">DULCE DE LECHE GRANIZADO</h5>
+          <p>Con merengue y pedacitos de chocolate</p>
+        </div>
+        <!-- NOCCIOLA BIANCO -->
+        <div class="col-md-3 card fade-up">
+          <div class="image-box">
+            <img src="images/Sabores/Nocciola.jpg" alt="NOCCIOLA BIANCO" class="img-fluid zoom-img">
+          </div>
+          <h5 class="mt-3 fw-bold">NOCCIOLA BIANCO</h5>
+          <p>Helado de nocciola con cobertura de chocolate blanco crocante</p>
+        </div>
+        <!-- FRAMBUESA -->
+        <div class="col-md-3 card fade-up">
+          <div class="image-box">
+            <img src="images/Sabores/Frambuesa.jpg" alt="FRAMBUESA" class="img-fluid zoom-img">
+          </div>
+          <h5 class="mt-3 fw-bold">FRAMBUESA</h5>
+          <p>Con merengue y salsa de frutilla</p>
+        </div>
+        <!-- LEMON PIE -->
+        <div class="col-md-3 card fade-up">
+          <div class="image-box">
+            <img src="images/Sabores/LemonPie.jpg" alt="LEMON PIE" class="img-fluid zoom-img">
+          </div>
+          <h5 class="mt-3 fw-bold">LEMON PIE</h5>
+          <p>Helado de crostata al limone con merengue​</p>
+        </div>
+        <!-- FRUTILLA A LA CREMA CON GIANDUIA -->
+        <div class="col-md-3 card fade-up">
+          <div class="image-box">
+            <img src="images/Sabores/FrutillsALaCremaConGianduia.jpg" alt="FRUTILLA A LA CREMA CON GIANDUIA"
+              class="img-fluid zoom-img">
+          </div>
+          <h5 class="mt-3 fw-bold">FRUTILLA A LA CREMA CON GIANDUIA</h5>
+          <p>Con cobertura de crema de avellanas</p>
+        </div>
+        <!-- MARQUISE -->
+        <div class="col-md-3 card fade-up">
+          <div class="image-box">
+            <img src="images/Sabores/Marquise.jpg" alt="MARQUISE" class="img-fluid zoom-img">
+          </div>
+          <h5 class="mt-3 fw-bold">MARQUISE</h5>
+          <p>Helado de chocolate intenso extra cacao con dulce de leche natural y merengue</p>
+        </div>
+        <!-- DULCE DE LECHE AL CIOCCOLATO CROCCANTE -->
+        <div class="col-md-3 card fade-up">
+          <div class="image-box">
+            <img src="images/Sabores/DulceDeLecheAlCioccolatoCroccante.jpg" alt="DULCE DE LECHE AL CIOCCOLATO CROCCANTE"
+              class="img-fluid zoom-img">
+          </div>
+          <h5 class="mt-3 fw-bold">DULCE DE LECHE AL CIOCCOLATO CROCCANTE</h5>
+          <p>Con cobertura de chocolate crocante</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <footer class="footer-freddo text-center text-white py-5">
+    <div class="container">
+      <img src="images/foot-head/Fotter.jpg" alt="Freddo" class="freddo-logo" style="max-width: 100px;">
+      <p style="color: #d6d6d6; font-family: Jost; font-size: 19px;">¡Seguinos!</p>
+      <div class="d-flex justify-content-center gap-2">
+        <a href="https://www.facebook.com/freddohelados" target="_blank" class="icon-circle">
+          <i class='bx bxl-facebook text-white fs-1'></i>
+        </a>
+        <a href="https://www.tiktok.com/@heladosfreddo" target="_blank" class="icon-circle">
+          <i class='bx bxl-tiktok text-white fs-1'></i>
+        </a>
+        <a href="https://www.instagram.com/heladosfreddo/#" target="_blank" class="icon-circle">
+          <i class='bx bxl-instagram text-white fs-1'></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+  <footer class="footer-freddo text-center">
+    <div class="container">
+      <p class="info_footer">
+        Bases y Condiciones | <span> <strong>Beneficios</strong></span>
+      </p>
+    </div>
+
+    <!-- Botón flotante de consulta -->
+    <div class="consulta-btn text-end">
+      <button class="btn btn-light shadow-sm mb-1">
+        Hacé tu consulta
+      </button>
+      <div class="consulta-icon d-flex justify-content-center align-items-center">
+        <i class='bx bx-message-dots text-white fs-2'></i>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, {
+      threshold: 0.2
+    });
+
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

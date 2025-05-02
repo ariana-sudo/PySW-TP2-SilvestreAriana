@@ -1,0 +1,301 @@
+.cabecera {
+  position: relative;
+  background-image: url('/images/Franquicias/Franquicias.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 380px;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 98px;
+  padding-left: 70px;
+  color: white;
+}
+
+.cabecera .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 25, 74, 0.8), rgba(0, 25, 74, 0.2), rgba(0, 25, 74, 0));
+  z-index: 1;
+}
+
+.cabecera .contenido {
+  position: relative;
+  z-index: 2;
+}
+
+.cabecera h1 {
+  font-size: 50px;
+  font-family: "Oswald", sans-serif;
+  color: #ffffff;
+  font-weight: bold;
+
+}
+
+.titulo {
+  font-size: 53px;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+  margin-top: -60px;
+  margin-bottom: 40px;
+  color: #417cc2;
+  font-weight: bold;
+}
+
+.contenido {
+  padding-left: 80px;
+  padding-top: 120px;
+  padding-right: 70px;
+}
+
+.primera p {
+  font-family: "Jost";
+  font-weight: 400;
+  line-height: 1;
+  font-size: 19px;
+  margin-bottom: 20px;
+  width: 520px;
+}
+
+.segunda p {
+  font-family: "Jost";
+  font-weight: 400;
+  line-height: 1;
+  font-size: 19px;
+  color: #000;
+  width: 520px;
+  margin-bottom: 20px;
+}
+
+.lista {
+  font-family: "Jost";
+  font-weight: 400;
+  line-height: 1;
+  font-size: 19px;
+  color: #000;
+  width: 520px;
+}
+
+.imagen {
+  width: 555px;
+  height: 740px;
+}
+
+.contenido2 {
+  padding-left: -20px;
+  padding-top: 150px;
+  padding-right: 10px;
+  padding-bottom: 200px;
+}
+
+.titulo h2 {
+  font-weight: bold;
+  color: #4a90e2;
+  margin-bottom: 40px;
+}
+
+.paso {
+  text-align: center;
+  margin-top: 55px;
+  margin-bottom: 75px;
+}
+
+.paso h3 {
+  color: #4a90e2;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.paso p {
+  font-weight: 500;
+}
+
+.imagenes img {
+  width: 94%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sub {
+  font-family: "Oswald", sans-serif;
+  font-size: 40px;
+  margin-top: 110px;
+}
+
+.imagenes {
+  margin-left: 15px !important;
+  margin-right: 10px !important;
+}
+
+.form-control,
+.form-select {
+  background-color: #f3f3f3;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.form-control:focus,
+.form-select:focus {
+  box-shadow: none;
+  border-bottom: 2px solid #000;
+}
+
+button.btn-enviar {
+  background-color: #fff;
+  border: 1px solid #000;
+  font-weight: bold;
+  padding: 10px 30px;
+}
+
+.form-label::after {
+  content: " *";
+  color: red;
+}
+
+
+.form-control,
+textarea {
+  background-color: #f2f2f2;
+  border: none;
+  resize: none;
+  border-radius: none;
+  height: 50px;
+}
+
+.btn-enviar {
+  background-color: transparent;
+  border: 1px solid #bebdbd;
+  margin-top: 20px;
+  margin-bottom: 135px;
+  width: 108px;
+  border-radius: none;
+  font-size: 18px;
+  font-family: 'Times New Roman', Times, serif;
+
+}
+
+label {
+  margin-top: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.subnav-inner a:last-child {
+  border-right: none;
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+/*para pantallas medianas*/
+@media (min-width: 768px) and (max-width: 992px) {
+
+  .segunda {
+    justify-content: start;
+    margin-left: 80px;
+    margin-top: 80px;
+    margin-bottom: -50px;
+  }
+
+  .imagen2 {
+    width: 80%;
+    height: auto;
+    margin-bottom: 80px;
+    margin-top: -50px;
+
+  }
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+}
+
+/*para pantallas pequeñas*/
+@media (max-width: 768px) {
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  .cabecera {
+    height: 220px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    background-position: center;
+  }
+
+  .cabecera h1 {
+    font-size: 30px;
+  }
+
+  .contenido {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .primera {
+    justify-content: start;
+    margin-left: 20px;
+  }
+
+  .primera p {
+    text-align: left;
+    width: 320px !important;
+  }
+
+  .segunda {
+    justify-content: start;
+    margin-left: 20px;
+    margin-bottom: -50px;
+  }
+
+  .segunda p,
+  .lista {
+    text-align: left;
+    width: 320px !important;
+  }
+
+  .imagen {
+    width: 300px;
+    height: auto;
+  }
+
+  .imagen2 {
+    width: 90%;
+    height: auto;
+    margin-bottom: 80px;
+    margin-top: -50px;
+
+  }
+
+  .imagenes {
+    margin-bottom: -100px;
+  }
+}
