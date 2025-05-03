@@ -1,6 +1,6 @@
 .cabecera {
   position: relative;
-  background-image: url('/images/Nosotros/CabeceraNosotros.jpg');
+  background-image: url('../images/Nosotros/CabeceraNosotros.jpg');
   background-size: cover;
   background-position: center;
   height: 380px;

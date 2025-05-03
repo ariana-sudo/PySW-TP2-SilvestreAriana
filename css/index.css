@@ -102,7 +102,7 @@ h1 {
 }
 
 .banner-boutique {
-  background-image: url('/images/Index/Index.jpg');
+  background-image: url('../images/Index/Index.jpg');
   background-size: cover;
   min-height: 100vh;
   position: relative;

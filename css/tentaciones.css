@@ -1,6 +1,6 @@
 .cabecera {
     position: relative;
-    background-image: url('/images/Tentaciones/fondo_tentaciones.jpg');
+    background-image: url('../images/Tentaciones/fondo_tentaciones.jpg');
     background-size: cover;
     background-position: center;
     height: 380px;

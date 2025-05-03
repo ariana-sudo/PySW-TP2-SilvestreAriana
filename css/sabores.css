@@ -1,6 +1,6 @@
 .cabecera {
   position: relative;
-  background-image: url('/images/Sabores/Fondo_sabores.jpg');
+  background-image: url('../images/Sabores/Fondo_sabores.jpg');
   background-size: cover;
   background-position: center;
   height: 380px;

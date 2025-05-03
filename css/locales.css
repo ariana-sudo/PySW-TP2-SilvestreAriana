@@ -1,6 +1,6 @@
 .cabecera {
     position: relative;
-    background-image: url('/images/Nosotros/FondoLocales.jpg');
+    background-image: url('../images/Nosotros/FondoLocales.jpg');
     background-size: cover;
     background-position: center;
     height: 380px;

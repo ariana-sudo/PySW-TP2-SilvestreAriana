@@ -1,6 +1,6 @@
 .cabecera {
   position: relative;
-  background-image: url('/images/Pre-envasado/pre-envasado_fondo.jpg');
+  background-image: url('../images/Pre-envasado/pre-envasado_fondo.jpg');
   background-size: cover;
   background-position: center;
   height: 380px;
